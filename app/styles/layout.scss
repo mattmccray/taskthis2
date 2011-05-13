@@ -1,0 +1,20 @@
+@import "_tools";
+
+@include css-reset();
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.debug *:hover {
+  outline: 1px solid red;
+}
+
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.3em;
+  height: 100%;
+}

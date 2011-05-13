@@ -1,0 +1,17 @@
+embed_assets: on
+compress_assets: off
+gzip_assets: off
+javascript_compressor: closure
+
+
+javascripts:
+  taskthis:
+    - public/javascripts/jquery.js
+    - public/javascripts/underscore.js
+    - public/javascripts/backbone.js
+    - public/javascripts/rails.js
+    - public/javascripts/coffeescripts.js
+
+stylesheets:
+  taskthis:
+    - public/stylesheets/*.css

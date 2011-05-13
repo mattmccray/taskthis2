@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title TaskTHIS 2
+    = include_stylesheets :taskthis, :media=>'all'
+    - if Rails.env.production?
+      = include_javascripts :taskthis
+    - else
+      = javascript_include_tag "jquery"
+      = javascript_include_tag "underscore"
+      = javascript_include_tag "backbone"
+      = javascript_include_tag "rails"
+      = coffee_script_bundle
+    = csrf_meta_tag
+    = yield :head
+  %body{ :id=>page_id, :class=>page_class  }
+    = content_for?(:content) ? yield(:content) : yield

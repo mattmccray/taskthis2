@@ -2,10 +2,19 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'haml'
+
+gem 'jquery-rails', '>= 0.2.6'
+
+gem 'jammit'
+
+gem 'bistro_car'
 
 gem 'sqlite3'
+
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'
